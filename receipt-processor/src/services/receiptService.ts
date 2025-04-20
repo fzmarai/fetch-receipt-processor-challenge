@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid'
-import { Receipt } from '@/types/receipt';
-import { calculatePoints } from '@/utils/pointCalculator';
-import * as receiptModel from '@/models/receiptModel';
+import { Receipt } from '../types/receipt';
+import { calculatePoints } from '../utils/pointCalculator';
+import * as receiptModel from '../models/receiptModel';
 
 /**
  * Process a receipt and return an ID

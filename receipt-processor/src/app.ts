@@ -66,3 +66,7 @@ const startServer = () => {
 };
 
 export { app, startServer };
+
+if (require.main === module) {
+    startServer();
+  }

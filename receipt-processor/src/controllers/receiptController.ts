@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import * as receiptService from '@/services/receiptService';
+import * as receiptService from '../services/receiptService';
 
 export const processReceipt = async (req: Request, res: Response) => {
     try {

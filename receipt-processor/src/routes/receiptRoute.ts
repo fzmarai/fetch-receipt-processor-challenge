@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import { processReceipt, getPoints } from '@/controllers/receiptController';
-import { ReceiptSchema } from '@/validation/receiptSchema';
-import { validate } from '@/validation/validationMiddleware';
+import { processReceipt, getPoints } from '../controllers/receiptController';
+import { ReceiptSchema } from '../validation/receiptSchema';
+import { validate } from '../validation/validationMiddleware';
 
 const router = Router();
 

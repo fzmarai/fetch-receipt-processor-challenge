@@ -1,4 +1,4 @@
-import { Receipt } from "@/types/receipt";
+import { Receipt } from "../types/receipt";
 
 // In-memory storage
 const receipts: Map<string, Receipt> = new Map();

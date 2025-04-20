@@ -1,4 +1,4 @@
-import { Receipt } from "@/types/receipt";
+import { Receipt } from "../types/receipt";
 
 /**
  * Calcualtes points based on the given rules
