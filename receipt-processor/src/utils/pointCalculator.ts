@@ -28,7 +28,7 @@ export const calculatePoints = (receipt: Receipt): number => {
     receipt.items.forEach(item => {
         const trimmedLength = item.shortDescription.trim().length;
         if (trimmedLength % 3 === 0) {
-            points += Math.round(parseFloat(item.price) * 0.2);
+            points += Math.ceil(parseFloat(item.price) * 0.2);
         }
     });
 

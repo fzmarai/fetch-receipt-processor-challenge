@@ -19,7 +19,7 @@ export const getPoints = async (req: Request,  res: Response) => {
     } catch (error) {
         console.error('Error in getPoints controller: ', error);
         if (error instanceof Error && error.message.includes('not found')) {
-            res.status(404).json({ error: error.message });
+            return res.status(404).json({ error: error.message });
         }
         res.status(500).json({ error: 'Internal server error'});
     }

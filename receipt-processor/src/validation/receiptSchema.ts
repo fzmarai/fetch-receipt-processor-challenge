@@ -1,5 +1,8 @@
 import { body } from 'express-validator';
 
+// import expressValidator from 'express-validator';
+// const { body } = expressValidator;
+
 export const ReceiptSchema = [
     body('retailer').isString().notEmpty().withMessage('Retailer name is required'),
     body('purchaseDate').isDate({ format: 'YYYY-MM-DD'}).withMessage('Purchase date mmust be in YYYY-MM-DD format'),
