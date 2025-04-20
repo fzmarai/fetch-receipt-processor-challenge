@@ -3,6 +3,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import config from './config';
 import logger from './config/logger';
+import receiptRoute from './routes/receiptRoute';
 
 // Create Express app
 const app: Express = express();
@@ -27,6 +28,9 @@ app.get('/', (req: Request, res: Response) => {
 app.get('/health', (req: Request, res: Response) => {
     res.status(200).json({ status: 'ok'});
 });
+
+// Receipt routes
+app.use('/receipts', receiptRoute);
 
 // 404 handler
 app.use((req:Request, res:Response) => {
